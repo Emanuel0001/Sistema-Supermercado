@@ -1,0 +1,331 @@
+body{
+  background: url(supermercado10.jpg) no-repeat;
+background-size: cover; 
+background-position: center;*/
+}
+
+
+form{
+
+}
+
+
+input[type="varchar"],input[type="int"]{
+  width:75%;
+  background:#fff;
+  margin-bottom:3%;
+  border:1px solid #3c3a44;
+  padding:2%;
+  font-family:sans-serif;
+  font-size:100%;
+  color:#555;
+}
+
+input[type="submit"]{
+  width:24%;
+  background: #3c3a44;
+  border:0;
+  padding:2%;
+  font-family:'Open Sans',sans-serif;
+  font-size:100%;
+  color:#fff;
+  cursor:pointer;
+  transition:background .3s;
+  -webkit-transition:background .3s;
+}
+
+
+#center{
+background: ;
+width: 30%;
+  padding: 10px 0 10px 0;
+  
+  
+}
+#central{
+  padding: 5% 10% 5% 10%;
+  border: 1px solid black;
+  background-color: gray;
+  position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#container{
+position: absolute;
+  top: 1%;
+  right: 1%;
+  
+float: right;
+}
+
+table {
+  background: gray; 
+  }
+table#alt tr  { /* lucro */
+  background: yellow;
+  } 
+
+
+table#alter tr td { /* Toda a tabela com fundo creme */
+  background: #FFF;
+  } 
+table#alter tr.dif td {
+  background: #FFF; /* Linhas com fundo cinza */
+  }
+.vertical-menu {
+    width: 200px; /* Set a width if you like */
+    
+}
+
+.vertical-menu a {
+    border: solid gray 1px;
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+    background-color: red; /* Add a green color to the "active/current" link */
+    color: white;
+}
+
+
+
+
+
+
+/*configuração*/
+.vertical-conf {
+    width: 110px; /* Set a width if you like */
+    
+}
+
+.vertical-conf a {
+    border: solid gray 1px;
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 10px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-conf a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-conf a.active {
+    background-color: red; /* Add a green color to the "active/current" link */
+    color: white;
+}
+#voltar{
+position: absolute;
+  bottom: 1%;
+  right: 1%;
+  
+float: right;
+
+}
+#adicionar{
+  position: absolute;
+  
+  right: 25%;
+  
+}
+#div{
+  position: absolute;
+  top: 3%;
+  right: 8%;
+  
+}
+
+#titulo h1{
+  background:#3c3a44;
+  padding:20px 0;
+  font-size:100%;
+  font-weight:300;
+  text-align:center;
+  color:#fff;
+}#t{
+  width:400px;
+  margin:0 auto;
+  margin-top:8px;
+  margin-bottom:2%;
+  transition:opacity 1s;
+  -webkit-transition:opacity 1s;
+  
+  
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: red;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: solid gray 1px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #275ef7}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #6b6972;
+}
+#home{
+  background-color: #494950;
+width: 100%;
+margin-top: 2px;
+padding: 10px 0 30px 0;
+}
+
+
+
+*{ margin:0;
+   padding:0;
+}
+
+#check{
+  display:none;
+}
+#icone{
+  cursor: pointer;
+  padding: 15px;
+
+  position: absolute;
+  z-index:1;
+}
+.barra{
+   background-color: #333;
+  height: 100%;
+  width: 300px;
+  position: absolute;
+  transition: all .0s linear;
+  left: -300px;
+}
+nav{
+  width: 100%;
+  position: absolute;
+  top:60px;
+}
+nav a{ text-decoration:none}
+.link{
+  background-color: #494950;
+  padding:20px;
+  font-family: 'Arial';
+  font-size: 12pt;
+
+  transition:all .1s linear;
+  color: #f4f4f9;
+  border-bottom:2px solid #222;
+  opacity: 0;
+  margin-top: 200px;
+}
+.link:hover{
+  background-color: #050542;
+}
+
+#check:checked ~ .barra{
+  transform: translateX(300px);
+}
+
+#check:checked ~ .barra nav a .link{
+  opacity: 1;
+  margin-top: 0;
+  transition-delay: .1s;
+}
+/*
+#estilocentral{
+  background-color: gray;
+  padding: 200px 800px 100px 100px;
+margin-left: 300px;
+margin-right: 0.01%;
+margin-bottom:0;
+
+}
+*/#estilo{
+
+position: absolute;
+  top: 50%;
+  left: 50%;
+   
+
+  transform: translate(-50%, -50%);
+
+}
+#voltar{
+position: absolute;
+  bottom: 1%;
+  right: 1%;
+  
+float: right;
+
+}
+#adicionar{
+  position: absolute;
+  width: 100%;
+  left: 30%;
+  top: 0%;
+  bottom: 0px;
+}
+#sair{
+  position: absolute;
+  width: 50%;
+  left: 72%;
+  top: 80%;
+  
+}
+
+
+ h1{
+  margin-top: 0px;
+  background:#3c3a44;
+  padding:20px 0;
+  font-size:140%;
+  font-weight:300;
+  text-align:center;
+  color:#fff;
+
+}
+
+
+#green{
+  background: green;
+  font-size: ;
+  color:black;
+}
